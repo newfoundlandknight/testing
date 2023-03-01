@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(94, 224, 247);
+    color:black;
+  }
+  
+  /* Style the header */
+  .header {
+    height:80px;
+    text-align: center;
+    /*position: relative;*/
+    background: #4855a0;
+    height: 35px;
+    box-shadow: 0 10px 11px #000;
+    /*max-width: 1200px; */
+    z-index: 10;
+  }
+  
+  .header #paddle {
+    height: 30px;
+    float: right;
+  }
+  .header #burger {
+    height: 30px;
+    float: left
+  }
+  .img-container {
+    height: 40px;
+    float: left;
+    width: 73.33%;
+    padding: 5px
+  }
+  .img-container1 {
+    height: 40px;
+    float: left;
+    width: 13.33%;
+    padding: 3px 10px 3px 10px
+  }
+  .header h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px
+  }
+  .main {
+    z-index: -1;
+    margin-bottom: 0px;
+    position: relative;
+    background-image: url("../images/canoe.jpg");
+    clip-path: circle(50% at 50% 50%);/*;*/
+    color: rgb(255, 255, 255);
+    height: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px
+  }
+  .main h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    font-size: 3em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+  }
+#content {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    padding: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+
+
+
+ 
+}
+#content p{
+    margin: 0px;
+    padding: 10px;
+     text-align: justify;
+    font-size: 20px;
+    max-width: 1200px;
+    border:#4855a0;
+    border-style: solid;
+    border-width : 1px 1px 1px 1px;
+    border-radius: 5px;
+    border-color : #000000;
+}
+
+
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three unequal columns that sits next to each other */
+  .column {
+    padding: 10px;
+    height: 100px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Left and right column */
+  .column.side {
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  .dropdown {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    height: 380px;
+    width: 160px;
+    background-color: #4855a0;
+    top: 30px;
+    text-align: center;
+
+    color: #100101;
+    z-index: 10;
+    /*    display: none;*/
+    box-shadow: 0 10px 11px #000;
+     }
+  .button {
+    position:unset;
+    border-style: solid;
+    border-width : 1px 1px 1px 1px;
+    border-radius: 5px;
+    border-color : #000000;
+    cursor: pointer;
+
+    padding: 4px;
+    margin:5px;
+
+    line-height: 30px;
+    background: #4E9CAF;
+    width: 150px;
+
+    text-align: center;
+
+  }  .dropdown a {
+    text-decoration: none;
+  }
+  .dropdown .button:focus,
+  .dropdown .button:hover {
+  background-color: FireBrick;
+  color: White;
+}
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 900px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }

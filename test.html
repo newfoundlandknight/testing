@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Halifax Canoe and Kayak</title>
+    <link href="css/test_style.css" rel="stylesheet">
+    <link rel="icon" type="./image/x-icon" href="../images/paddle-white_icon.png">
+
+ 
+    <style>
+
+    </style>
+</head>
+
+
+
+<body>
+    
+    
+<header>
+ <!-- nav logo title and hamburger -->
+    <div class="top">  <nav class="menu">
+    <a href="#" >home</a>
+    <a href="#" class="item_menu">about</a>
+    <a href="#" class="item_menu">products</a>
+    <a href="#" class="item_menu">services</a>
+    <a href="#" class="item_menu">contact</a>
+</nav>    
+        <a href="#" class="menu_icon"><img src="../images/hamburger.png" height ="50"></a>
+     </div> 
+    <h1>Halifax Canoe & Kayak</h1>
+    <div><img src="../images/paddle-white.png" height ="50"></div>
+
+</header>
+
+
+
+
+    <section>
+            <!-- masthead image and text -->
+
+    <div id="main">
+        <div id="main_text"> <h1>Come Experience <br>CANADA </h1></div>
+    </div>
+    </section>
+
+
+
+
+
+<main>
+
+
+
+   
+</main>
+
+
+    <section>
+
+        <div class="flex-container">
+            <div class="flex-item-full">
+                <h4>
+                     You'll fall in love with our beautiful location and our own urban wilderness home to white tail deer, ospreys and more. <br><br>We are a stone's throw from Point Pleasant Park on the scenic Northwest Arm dotted with sailboats, marinas and the rugged Atlantic coastline Paddle with us to discover Seal Cove, Sir Sanford Fleming Park, Dead Man's Island, Point Pleasant Park or McNabs Island provincial Park. 
+                </h4>
+            </div>
+
+            <div class="flex-item-full">
+                <h2>Upcoming adventures!</h2>
+            </div>
+
+            <div class="flex-item-left">
+                <h3>Halifax</h3><!-- halifax section -->
+                <p>Date 2023-03-28</p>
+                <p>Duration 4 days</p>
+                <br>
+                <h4>Summary</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione, at delectus earum sapiente
+                    corrupti assumenda pariatur ipsa dolorum laborum ut minus voluptas rem. Odit ducimus consequatur et
+                    esse ipsa!
+                    here is the text section</p>
+            </div>
+
+            <div class="flex-item-right">
+                <h3>Sydney</h3><!-- sydney section -->
+                <p>Date 2023-07-08</p>
+                <p>Duration 5 days</p>
+                <br>
+                <h4>Summary</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione, at delectus earum sapiente
+                    corrupti assumenda pariatur ipsa dolorum laborum ut minus voluptas rem. Odit ducimus consequatur et
+                    esse ipsa!
+                    here is the text section</p>
+            </div>
+            <div class="flex-item-left">
+                <h3>Canso</h3><!-- canso section -->
+                <p>Date 2023-09-08</p>
+                <p>Duration 5 days</p>
+                <br>
+                <h4>Summary</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione, at delectus earum sapiente
+                    corrupti assumenda pariatur ipsa dolorum laborum ut minus voluptas rem. Odit ducimus consequatur et
+                    esse ipsa!
+                    here is the text section</p>
+            </div>
+
+            <div class="flex-item-right">
+                <h3 id="template_h3"><a href="#" id="clicker_exmample">click me to generate new adventure</a></h3>
+                <!-- template section -->
+                <p id="template_date"></p>
+                <p id="template_dur"></p>
+                <br>
+                <h4 id="template_h4"></h4>
+                <p id="template_summary_details"></p>
+
+            </div>
+        </div>
+
+
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <h2>Footer</h2>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script>
+
+  //  $("#burger").hover(function(){ $("#dropdown1").toggle();       });
+
+// the toggle function using jQuery to listen to click events on the clicker_example and when triggered to write innerhtml
+
+
+
+
+   $(document).ready(function() {
+    $("body").on('click', '.top', function() {
+        $("nav.menu").toggleClass("menu_show");
+    });
+
+    $("#clicker_exmample").click(function(){
+    $("#template_h3").html("Somewhere in NS");
+    $("#template_date").html("Date 2023-03-28");
+    $("#template_dur").html("Duration 8 days");
+    $("#template_h4").html("Summary:");
+    $("#template_summary_details").html(" amet consectetur adipisicing elit. Non ratione, at delectus earum sapiente corrupti assumenda pariatur ipsa dolorum laborum ut minus voluptas rem. Odit ducimus consequatur et esse ipsa! here is:");
+
+    });
+
+});
+
+</script>
+    
+      
+</body>
+</html>

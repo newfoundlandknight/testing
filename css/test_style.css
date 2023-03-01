@@ -1,0 +1,200 @@
+/* universal styles  */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  :root {
+    --blue: rgb(232, 236, 245);
+    --white: rgb(255,255,255);
+    --black: rgb(0,0,0);
+  }
+
+    body { margin: 0 auto; 
+      /* max-width: 1200px  */
+
+    }
+
+    header {
+        height: 50px;
+        background-color: #3e739d;
+        border-bottom: 1px solid #494949;
+        box-shadow: 0 10px 11px 0 #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header > h1 {
+        width: calc(100% - 160px);
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+    header > .top {
+       
+        align-items: left;
+    }
+    header > .top a.menu_icon  {
+        color: #000;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .2s ease;
+    }
+    header > .top a.menu_icon:hover i {
+        color: #fff;
+    }
+    .menu_show {
+    left:0!important;
+ 
+    }
+    nav.menu {
+        top:50px;
+        width: 170px;
+        min-height: calc(50vh - 121px);
+        background-color: #3e739d;
+        position: absolute;
+        left: -300px;
+        transition: .3s all;
+        box-shadow: 0 10px 11px #000;
+    }
+    nav.menu > a {
+        display: block;
+        padding: 5px;
+        margin: 15px 0 0px 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    nav.menu > a:hover { 
+        color: red;
+    }
+    main {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        max-width: 1200px;
+    }
+    footer {
+        height: 50px;
+        background-color: #494949;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+
+    }
+
+section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* main images and text for masthead */
+#main {
+  position: relative;
+  background-image: url("../images/canoe.jpg");
+  /*clip-path: circle(60% at 50% 50%);*/
+  z-index:-1 ;
+  background-color: #ccc;
+  height: 500px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 11px #000;
+}
+
+#main_text {
+    
+  text-align: center;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+  font-size: 2em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+    /* 
+
+
+
+*/
+
+/* flex styles  */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 0 px;
+  margin: 5 px;
+ 
+}
+.flex-item-left {
+  box-shadow: 10px 10px 11px #000;
+  margin: 8px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: var(--blue);
+  flex: 48%;
+  border-radius: 10px
+}
+.flex-item-right {
+  box-shadow: 10px 10px 11px #000;
+  margin: 8px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: var(--blue);
+  flex: 48%;
+  border-radius: 10px
+}
+.bare {  height: 100%;
+  text-align: center;
+  /*box-shadow: none;*/
+}
+.flex-item-full {
+  box-shadow: 10px 10px 11px #000;
+  margin: 4px 8px 8px 8px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: var(--blue);
+
+  flex: 100%;
+
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+}
+
+/* break points */
+@media screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 800px) {
+    header > h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h2 {font-size:1.5em;}
+}
+@media screen and (max-width: 400px) {
+    nav.menu {
+        
+        width: 100%;
+        left: -100%; 
+    }
+    header h1 {
+        font-size: 15px;
+    }
+}
